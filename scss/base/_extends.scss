@@ -1,0 +1,42 @@
+@import'./variables';
+@import './mapas.scss';
+
+%salas2 {
+    background-color: $inst-bg-color;
+    font-family: $font-regular;
+    font-size: 25px;
+    font-style: italic;
+    text-align: justify;
+    margin: map-get($standard, margin-standard);
+    padding: map-get($standard , padding-standard);
+    border: 4px solid black;
+}
+
+%salas1 {
+    background-color: $inst-bg-color;
+    /*display: inline-block;*/
+    display: flex;
+    justify-content: center;
+    margin: map-get($standard, margin-standard);
+    padding: map-get($standard , padding-standard);
+    border: 4px solid black;
+    /*width: 80%;*/
+}
+
+%salas0 {
+    background-color: $inst-bg-color;
+    font-family: $font-regular;
+    text-align: center;
+    margin: map-get($standard, margin-standard);
+    padding: 25px;
+    border: 4px double black;
+}
+
+%encabezados {
+    background-color: $inst-bg-color;
+        font-family: $font-regular;
+        text-align: center;
+        margin: map-get($standard, margin-standard);
+        padding: map-get($standard , padding-standard);
+        border: 4px double black;
+}

@@ -1,0 +1,65 @@
+@import '../base/variables';
+/*Bienvenido.html*/
+
+.unique{
+    background-color: $color-wcm;
+
+
+.container{
+    border-radius: 6px;
+    margin: 80px auto;
+    display: grid;
+    background-color: black;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (2, 1fr);
+    grid-template-areas: 
+    'image1 image2'
+    'image3 image3';
+}
+.animate__fadeIn{
+    animation-duration: 1.5s;
+}
+
+.image1{
+    border: 5px double white;
+    margin: 70px;
+    padding: 25px;
+    grid-area: image1;
+}
+.animate__fadeInLeft{
+     animation-duration: 4s;
+}
+.image2{
+    border: 5px double white;
+    margin: 20px;
+    padding: 25px;    
+    grid-area: image2;
+}
+.animate__fadeInRight{
+    animation-duration: 4s;
+}
+.image3{
+    margin: 20px;
+    padding: 5px;
+    grid-area: image3;
+    color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 60px;
+    a{
+       color: white;
+       margin-top: 7px;
+       &:hover{
+           background-color: white;
+           padding: 8px;
+           margin: 5px;
+           transition: all 2s;
+           transform: scale(4);
+        }
+    }
+}
+.animate__fadeInUp{
+    animation-duration: 4s;
+}
+}

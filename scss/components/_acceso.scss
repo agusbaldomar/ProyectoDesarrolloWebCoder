@@ -1,0 +1,216 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mapas.scss';
+@import '../base/extends';
+
+/*SECCION ACCESO A LA JUSTICIA*/
+/*Ogaac.html*/
+
+.main-ogaac{
+    
+    .encabezado-ogaac{
+        @extend %encabezados;
+    }
+   .ogaac-container{
+      margin-left: 10px;
+
+      .ogaac-imagen{
+          background-color: $inst-bg-color;
+          margin: 10px;
+          padding: 20px;
+          border: 7px double nth($colores, 2);
+          text-align: center;
+        }
+
+        .ogaac-parte-1{
+         background-color: $inst-bg-color;
+         margin: 5px;
+         padding: 10px;
+         border: 2px solid nth($colores, 2);
+         font-family: $font-regular;
+         font-size: 18px;
+         line-height: map-get($regular, line-height-regular);
+         text-align: justify;
+        } 
+
+        .ogaac-parte-2{
+         background-color: $inst-bg-color;
+         margin: 10px;
+         padding: 20px;
+         padding-left: 30px;
+         border: 3px solid black;
+         font-family: $font-regular;
+         font-size: 20px;
+         text-align: justify;
+         list-style: decimal;
+         line-height: map-get($regular, line-height-regular);
+        }
+
+        .ogaac-parte-3{
+         font-family: Arial, Helvetica, sans-serif;
+         display: block;
+         padding:0 1.5rem;
+         line-height: 1.5rem;
+         text-decoration: none;
+        }
+    }
+   
+}
+
+/*Consulta.html - mi idea es que aca haya bottones grandes */
+
+.main-consulta{
+
+    .encabezado-enlaces{
+        @extend %encabezados;
+    }
+    .Enlaces-1{
+        background-color: $inst-bg-color;
+        margin: 10px;
+        padding: 20px;
+        padding-left: 30px;
+        border: 3px solid black;
+        font-family: $font-regular;
+        color: nth($colores , 3);
+        font-size: 18px;
+        text-align: justify;
+        list-style: decimal;
+        line-height: map-get($regular, line-height-regular);
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: (3, 1fr);
+        grid-template-areas: 
+        'cjmujer ovd'
+        'consejo mpf'
+        'mpd none';
+        justify-content: space-between;
+        a{
+            color: black;
+            &:hover{
+                background-color: rgb(179, 166, 166);
+            }
+        }
+        .cjmujer{
+            grid-area: cjmujer;
+            margin: 15px;
+            height: 100px;
+        }
+        .ovd{
+            grid-area: ovd;
+            margin: 15px;
+            height: 100px;
+        }
+    
+        .consejo{
+            grid-area: consejo;
+            margin: 15px;
+            height: 100px;
+        }
+    
+       .mpf{
+            grid-area: mpf;
+            margin: 15px;
+            height: 100px;
+        }
+    
+       .mpd{
+            grid-area: mpd;
+            margin: 15px;
+            height: 100px;
+        }
+    }
+}
+
+/*Guia.html*/
+
+.main-guia{
+    .Guia0{
+        background-color: rgb(175, 170, 170);
+        font-family: 'Nano sans display';
+        text-align: center;
+        margin: map-get($standard, margin-standard);
+        padding: map-get($standard , padding-standard);
+        border: 4px double black;
+    }
+
+    .Box-container{
+        margin: 20px;
+        padding: 15px;
+        background-color: rgb(175, 170, 170);
+        font-family: $font-regular;
+        margin-left: 30px;
+        padding: 10px;
+        border: 3px solid black;
+
+        .Guia1{
+            background-color: rgb(175, 170, 170);
+            margin: 40px;
+            padding: 30px;
+            border: map-get($regular, border-regular);
+            font-family: $font-regular;
+            line-height: map-get($regular, line-height-regular);
+            display: flex;
+            /*list-style: circle;*/ 
+            justify-content: space-between;
+
+            .Guia1-2{
+                 float: left;
+            }
+
+            .MapaBeruti{
+                margin: 20px;
+                padding: 25px;
+                border: 4px double black;
+                /*float: right;*/
+                /*display: flex;*/
+                /*justify-content: right;*/
+            }
+        }
+
+        .Guia2{
+            background-color: rgb(175, 170, 170);
+            margin: 40px;
+            padding: 30px;
+            border: map-get($regular, border-regular);
+            font-family: $font-regular;
+            line-height: map-get($regular, line-height-regular);
+            display: flex;
+            /*list-style: circle;*/
+            justify-content: space-between;
+
+            .Guia2-2{
+                 float: left;
+                 /*width: 50%;
+                 text-align: justify;*/
+            }
+
+            .MapaTacuari{
+                    margin: 20px;
+                    padding: 10px;
+                    border: 4px double black;
+                    /*float: right;*/
+                    /*display: flex;
+                    justify-content: right;*/
+            } 
+        }
+        /*Decidi ponerlos afuera por que modifican tanto a la guia1 como a la guia2*/
+        .Juzgados{
+                background-color: rgb(175, 170, 170);
+             margin: 25px;
+                padding: 25px;
+                border: map-get($regular, border-regular );
+                font-family: $font-regular;
+                line-height: map-get($regular, line-height-regular);
+                /*list-style:circle;
+                text-align: justify;
+                display: block;*/
+                font-size: 20px;
+        }
+
+       .NombresJuzgados{
+                margin-left: 20px;
+        }
+
+    }
+       
+}
+
