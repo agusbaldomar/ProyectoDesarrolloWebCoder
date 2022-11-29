@@ -1,0 +1,169 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mapas';
+
+/*SECCION INSTITUCIONAL*/
+/*Organigrama.html*/
+
+.main-organigrama{
+
+    .encabezado-organigrama{
+        @extend %encabezados;
+    }
+
+    .organigrama-1{
+        background-color: $inst-bg-color;
+        margin: 20px;
+        margin-top: 10px;
+        padding: 20px;
+        padding-top: 10px;
+        border: 2px solid black;
+        line-height: 23px;
+        font-family: $font-regular;
+        font-size: 20px;
+        text-align: justify;
+
+        .imagen-organigrama{
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+    }    
+   
+   strong{
+        text-decoration: underline;
+        font-style: italic;
+    }
+   .organigrama-2{
+        background-color: $inst-bg-color;
+        margin: 25px;
+        padding: 25px;
+        border: 2px solid black;
+        font-family: $font-regular;
+        font-size: 20px;
+        line-height: 25px;
+        list-style: circle;
+    }
+}
+
+/*noticias.html*/
+
+.main-noticias{
+
+    .encabezado-noticias{
+        @extend %encabezados;
+    }
+    
+    .first-new{
+      background-color: rgb(90, 87, 87);
+      border-radius: 4px;
+
+      .noticias-3{
+          background-color: $inst-bg-color;
+          margin: 20px;
+          margin-bottom: 5px;
+          padding: 15px;
+          border: 6px double black;
+          position: static;
+        }
+
+      
+    }
+
+    .noticias-1{
+      background-color: $inst-bg-color;
+      font-family: $font-regular;
+      margin-bottom: 10px;
+      padding: 5px;
+      border-top: 3px solid black;
+      border-left: 3px solid black;
+      border-right: 3px solid black;
+      margin-top: 10px;
+      margin-bottom: 0 ;
+      text-align: center;
+    }
+    .noticias-2{
+      background-color: $inst-bg-color;
+      font-family: $font-regular;
+      margin-bottom: 10px;
+      padding: 5px;
+      margin-top: 0;
+      border-bottom: 3px solid black;
+      border-left: 3px solid black;
+      border-right: 3px solid black; 
+      text-align: center;
+    }
+
+    .noticias-4{
+        background-color: $inst-bg-color;
+        margin-top: 15px;
+        padding: 25px;
+        padding-left: 50px;
+        border: 2px solid black;
+        font-family: $font-regular;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: justify;
+    }
+    .second-new{
+        margin-top: 15px;
+        background-color: rgb(90, 87, 87);
+        border-radius: 4px;
+
+    }
+.noticias-5{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        flex-wrap: wrap;
+}
+.imagenes-noticias{
+        flex: 25%;
+        padding: 7px;
+}
+
+
+.carousel{
+        margin-left: 100px;
+        border: 7px double white;
+}
+}
+
+/*Misiones.html*/
+
+.main-misiones{
+
+    .encabezado-misiones{
+        @extend %encabezados;
+    }
+    .container-misiones{
+        background-color: rgb(90, 87, 87);
+    }
+
+   .misiones-1{
+        background-color: $inst-bg-color;
+        padding: 20px;
+        margin: 10px;
+        border: 2px solid black;
+        line-height: 25px;
+        font-family: $font-regular;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+  .misiones-2{
+        background-color: $inst-bg-color;
+        margin: 10px;
+        padding: 20px;
+        padding-left: 30px;
+        border: 3px solid black;
+        font-family: $font-regular;
+        font-size: 20px;
+        text-align: justify;
+        list-style: decimal;
+        line-height: 25px;
+    }
+    .carousel{
+        margin-left: 100px;
+        border: 7px double white;
+}
+}

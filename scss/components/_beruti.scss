@@ -1,0 +1,79 @@
+@import '../base/variables';
+@import '../base/mapas.scss';
+@import '../base/listas';
+@import '../base/extends';
+
+/*SECCION SALA DE AUDIENCIAS*/
+/*SEDE BERUTI - COMPLETO*/
+
+.main-beruti{
+    .Beruti0{
+        @extend %encabezados;
+    }
+
+   .Beruti1{
+        background-color: $inst-bg-color;
+        margin: 25px;
+        padding: map-get($standard , padding-standard);
+        border: 2px solid black;
+        font-family: $font-regular;
+        line-height: 25px;
+        list-style: circle;
+        /*display: inline-block;*/
+        /*width: 80%;*/
+
+        .InfoInterna{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            a{
+                color: black;
+                &:hover{
+                    background-color: rgb(179, 166, 166);
+                }
+            }
+
+            .Beruti1-2{
+                /*se que es el mismo color que una variable,
+                pero preferi que si la cambio este no se modifique*/
+                background-color: lighten($color-hdr, 10%);
+                color: white;
+                margin: 25px;
+                padding: map-get($standard , padding-standard);
+                border: 2px solid black;
+                font-family: $font-regular;
+                line-height: 25px;
+                list-style:circle;
+                /*text-align: justify;
+                display: block;*/
+                font-size: 20px;
+            } 
+        }
+    }
+}
+
+/*Salas*/
+
+.SalaImagen{
+    margin: 5px;
+    padding: 8px;
+    border: 2px double black;
+}
+
+.Sala1-0, .Sala2-0, .Sala3-0, .Sala4-0, .Sala5-0, .Sala6-0, .Sala7-0{
+    @extend %salas0;
+}
+
+.Sala1-1, .Sala2-1, .Sala3-1, .Sala4-1, .Sala5-1, .Sala6-1, .Sala7-1{
+    @extend %salas1;
+}
+
+.Sala1-2, .Sala2-2, .Sala3-2, .Sala4-2, .Sala5-2, .Sala6-2, .Sala7-2{
+    @extend %salas2;
+}
+
+.Sala1-4, .Sala2-4, .Sala3-4, .Sala4-4, .Sala5-4, Sala6-4, .Sala7-4{
+    margin: 40px;
+}
+

@@ -1,0 +1,65 @@
+/*Header*/
+
+header{
+    padding: 10px;
+    border: 8px solid black;
+    line-height: 15px;
+    background-color: $color-hdr;
+}
+.MenuGral{
+    font-family: Arial, Helvetica, sans-serif;
+     width: 100%;
+    font-size: 14px;
+    color: white;
+    
+    .Meenu{ 
+       list-style: none;
+       font-size: 0;
+       float: right;
+       background-color: $color-wcm;
+       margin-top: 20px;
+       display: flex;
+       justify-content:space-between;
+       .Lista{
+          position: absolute;
+          display: none;
+          color: white;
+          line-height: 20px;
+          .subitem{
+             display: block;
+            }
+        }
+    }
+    
+    .Interno{
+        display: inline-block;
+        color: white;
+        width: 15%;
+        position: relative;
+        text-align: center;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 8px;
+        background-color: $color-wcm; 
+        &:hover{
+            .Lista{
+            display: block;
+            background-color: $color-wcm;
+            color: white;}
+        }
+    }
+    
+    .subitem{
+        margin-left: 7px;
+        margin-right: 8px;
+    }
+}
+
+/*Footer*/
+
+footer{
+    background-color: $color-wcm;
+    width: 100%;
+    display: flex;
+    border: 4px solid black;
+}

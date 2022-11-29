@@ -1,0 +1,79 @@
+
+@import 'components/welcome';
+@import 'components/header';
+@import 'components/index';
+@import 'components/institucional';
+@import 'components/acceso';
+@import 'components/beruti';
+@import 'components/tacuari';
+@import 'components/suipacha';
+@import 'components/contacto';
+@import 'base/variables';
+@import 'base/listas';
+@import 'base/mapas.scss';
+@import'base/extends';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400&display=swap');
+
+/*Generales*/
+body{
+    background-color: $bg-color-body;
+    a{ 
+        color: black;
+        line-height: 27px;
+
+        &:hover{
+            background-color: lighten($color-hdr, 10%);
+            color: black;
+            padding: 8px;
+            margin: 5px;
+        }
+    }
+
+    @media screen and (min-width: 961px){
+        main{
+           background-color: white;}   
+        header{
+           background-color: $color-hdr;}
+           .Tacuari1-2, .Suipacha1-2, .Beruti1-2{
+               width: 350px;
+           }
+           .MapaTacuari {
+            width: 460px;
+            height: 350px;
+           }
+           
+           .MapaSuipacha, .MapaBeruti{
+               width: 560px;
+               height: 450px;
+           }
+    }  
+    @media screen and (min-width: 768px) and (max-width:960px){
+        main{
+        background-color: black;}
+        header{
+        background-color: rgb(83, 11, 11);}
+        .Tacuari1-2, .Suipacha1-2, .Beruti1-2{
+            width: 300px;
+        }
+        .MapaTacuari, .MapaSuipacha, .MapaBeruti{
+            width: 360px;
+            height: 250px;
+        }
+    }
+
+
+    @media screen and (max-width: 767px) {
+        .Tacuari1-2, .Suipacha1-2, .Beruti1-2{
+            width: 200px;
+        }
+        .MapaTacuari, .MapaSuipacha, .MapaBeruti, .noticias-3{
+            display: none;
+        }
+        .cjmujer, .consejo, .mpf, .mpd{
+            font-size: 12px;
+        }
+        .ovd{
+            font-size: x-small;
+        }
+    } 
+}
